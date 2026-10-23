@@ -58,6 +58,10 @@
                        class="px-3 py-2 rounded-lg text-sm font-medium transition {{ request()->routeIs('accounts.*') ? 'bg-emerald-50 text-emerald-700 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
                         🏦 Master Bank & Dompet
                     </a>
+                    <a href="{{ route('categories.index') }}" 
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition {{ request()->routeIs('categories.*') ? 'bg-emerald-50 text-emerald-700 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        🏷️ Kategori
+                    </a>
                 </nav>
             </div>
         </div>
