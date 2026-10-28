@@ -56,11 +56,15 @@
                 <nav class="flex items-center gap-1 sm:gap-2">
                     <a href="{{ route('accounts.index') }}" 
                        class="px-3 py-2 rounded-lg text-sm font-medium transition {{ request()->routeIs('accounts.*') ? 'bg-emerald-50 text-emerald-700 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
-                        🏦 Master Bank & Dompet
+                        🏦 Master Bank
                     </a>
                     <a href="{{ route('categories.index') }}" 
                        class="px-3 py-2 rounded-lg text-sm font-medium transition {{ request()->routeIs('categories.*') ? 'bg-emerald-50 text-emerald-700 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
                         🏷️ Kategori
+                    </a>
+                    <a href="{{ route('transactions.index') }}" 
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition {{ request()->routeIs('transactions.*') ? 'bg-emerald-50 text-emerald-700 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100' }}">
+                        💸 Transaksi
                     </a>
                 </nav>
             </div>
